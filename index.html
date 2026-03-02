@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>รักไม่รักน้าาา</title>
+    <title>Love or Not</title>
     <style>
         body {
             margin: 0;
@@ -91,10 +91,10 @@
     </audio>
 
 
-    <h1>บี๋รักเค้ามั้ย? 💖</h1>
+    <h1>Do you love me? 💖</h1>
 
-    <button class="yes" onclick="loveClick()">รัก😘</button>
-    <button class="no" id="noBtn">ไม่รัก😒</button>
+    <button class="yes" onclick="loveClick()">Yes😘</button>
+    <button class="no" id="noBtn">No😒</button>
 
     <script>
         const noBtn = document.getElementById("noBtn");
@@ -136,12 +136,10 @@
         function startMusic() {
             audio.play().catch(() => { });
 
-            // เล่นครั้งเดียวพอ
             document.removeEventListener("click", startMusic);
             document.removeEventListener("touchstart", startMusic);
         }
 
-        // แตะตรงไหนก็ได้
         document.addEventListener("click", startMusic);
         document.addEventListener("touchstart", startMusic);
     </script>
